@@ -1,0 +1,39 @@
+[alias]
+    # 检出分支或文件
+    co = checkout
+
+    # 添加所有更改到暂存区
+    aa = add .
+
+    # 提交更改（带消息）
+    cm = commit -m
+
+    # 提交更改（不带验证，带消息）
+    cmnv = commit --no-verify -m
+
+    # 推送更改到远程仓库
+    ps = push
+
+    # 拉取远程仓库的最新更改
+    pl = pull
+
+    # 查看当前状态
+    st = status
+
+    # 查看日志（简洁版）
+    lg = log --oneline --graph --all --decorate
+
+    # 撤销最后一次提交（保留工作区更改）
+    undo = reset HEAD~1 --mixed
+
+    # 强制推送（谨慎使用）
+    psf = push --force-with-lease
+
+    # 查看当前分支
+    br = branch
+
+    # 删除本地分支
+    bd = branch -d
+
+    # 删除远程分支
+    bdr = push origin --delete
